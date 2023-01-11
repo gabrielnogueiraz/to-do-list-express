@@ -1,0 +1,13 @@
+<%- include('../layounts/header', {title: 'Editar lista de tarefas'}) %> <%-
+include('../layounts/menu') %>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title size-4">Editar Lista</h1>
+
+    <%- include("form", (url: `/checklist/${checklist.id}?_method=put`, url:
+    '/checklists', checklist: checklist)) %>
+  </div>
+</section>
+
+<%- include('../layounts/footer') %>
